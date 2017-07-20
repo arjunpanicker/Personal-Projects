@@ -8,6 +8,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Deliverypedia - The Delivery Handbook</title>
 
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <!-- Bootstrap Files -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -37,14 +41,19 @@
 
     <!--Navbar-->
     <!-- <nav class="navbar navbar-toggleable-md navbar-dark bg-primary"> -->
-    <nav class="navbar navbar-toggleable-md navbar-dark scrolling-navbar fixed-top">
+
+    <div class="navbar navbar-toggleable-md navbar-dark scrolling-navbar">
         <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapseEx2" aria-controls="collapseEx2"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <div class="pull-left mt-2">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+
+            <button class="navbar-toggler navbar-toggler-right mt-1" type="button" data-toggle="collapse" data-target="#collapseEx2"
+                aria-controls="collapseEx2" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img src="images/Deliverypedia_logo_big.png" class="d-inline-block align-top z-depth-0" alt="MDBootstrap" height="50px">
+                <img src="images/Deliverypedia_logo_big.png" class="d-inline-block align-top z-depth-0 ml-2" alt="MDBootstrap" height="50px">
             </a>
             <div class="collapse navbar-collapse" id="collapseEx2">
                 <ul class="navbar-nav mr-auto">
@@ -71,12 +80,156 @@
                 </ul>
             </div>
             <a class="navbar-brand pull-right" href="">
-                <img src="images/aspirelogo.png" class="d-inline-block align-top z-depth-0" alt="Aspire Logo" height="50px" />
+                <img src="images/aspireLogo.png" class="d-inline-block align-top z-depth-0" alt="Aspire Logo" height="50px" />
             </a>
         </div>
-    </nav>
-    <!--/.Navbar-->
+    </div>
 
+    <!--/.Navbar-->
+    <div>
+        <ul id="slide-out" class="side-nav z-depth-10">
+
+            <li class="active"><a class="collapsible-header" href="#!">Dashboard</a></li>
+            <li><a class="collapsible-header" href="#!">Second Sidebar Link</a></li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">User Management<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Manage Users</a></li>
+                                <li><a href="#!">Manage Role</a></li>
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header">Mail<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#!">Mail Details</a></li>
+                                                    <li><a href="#!">Import Mail</a></li>
+                                                    <li><a href="#!">Mail Configuration</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="collapsible-header">Training Management<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Manage Training</a></li>
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <a class="collapsible-header">Reports<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                                            <div class="collapsible-body">
+                                                <ul>
+                                                    <li><a href="#!">Custom Reports</a></li>
+                                                    <li><a href="#!">Trainings By Role</a></li>
+                                                    <li><a href="#!">Trainings By Topic Type</a></li>
+                                                    <li><a href="#!">Trainings By Trainer</a></li>
+                                                    <li><a href="#!">Attendance</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="collapsible-header">Import<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">User Import</a></li>
+                                <li><a href="#!">Training Import</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="collapsible-header">Project Management<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Customers / Clients</a></li>
+                                <li><a href="#!">Service Line</a></li>
+                                <li><a href="#!">GeoDetails</a></li>
+                                <li><a href="#!">Practice</a></li>
+                                <li>
+                                    <ul class="collapsible collapsible-accordion">
+                                        <li>
+                                            <!-- <ul class="collapsible collapsible-accordion"> -->
+                                                <!-- <li> -->
+                                                    <a class="collapsible-header">Projects<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li><a href="#!">Project Details</a></li>
+                                                            <li><a href="#!">Import Project Data</a></li>
+                                                        </ul>
+                                                    </div>
+                                                <!-- </li> -->
+                                            <!-- </ul> -->
+                                        </li>
+
+
+                                        <li>
+                                            <!-- <ul class="collapsible collapsible-accordion"> -->
+                                                <!-- <li> -->
+                                                    <a class="collapsible-header">Reports<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li><a href="#!">Billing Summary</a></li>
+                                                        </ul>
+                                                    </div>
+                                                <!-- </li> -->
+                                            <!-- </ul> -->
+
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- </ul>
+            </li> -->
+
+
+                    <li>
+                        <a class="collapsible-header">Forecasting Management<span class="material-icons pull-right mt-1">arrow_drop_down</span></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!">Manage Forecasting</a></li>
+                                <li><a href="#!">Forecasting Data</a></li>
+                                <li><a href="#!">Forecasting and Actual Data</a></li>
+                                <li><a href="#!">Forecasting Graph</a></li>
+                                <li><a href="#!">Import Forecasting Data</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </li>
+        </ul>
+        <!-- <ul class="right hide-on-med-and-down">
+            <li><a href="#!">First Sidebar Link</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">First</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+            </ul>
+        </ul> -->
+        <!-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>  -->
+    </div>
 
     <div class="view hm-black-strong">
         <!--Intro content-->
@@ -378,7 +531,7 @@
 
     <script src="https://maps.google.com/maps/api/js"></script>
     <!--Google Maps-->
-    <script src="https://maps.google.com/maps/api/js"></script>
+
 
     <script>
         function init_map() {
@@ -403,15 +556,29 @@
         }
 
         google.maps.event.addDomListener(window, 'load', init_map);
-
     </script>
 
     <!--Animations initialization-->
     <script>
         new WOW().init();
-
     </script>
+    <script src="js/materialize.js"></script>
+    <script>
+        // Initialize collapse button
+        //$(".button-collapse").sideNav();
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        $('.collapsible').collapsible();
 
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true, // Choose whether you can drag to open on touch screens,
+            onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+            onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
+        }
+        );
+    </script>
 </body>
 
 </html>
